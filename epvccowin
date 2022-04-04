@@ -1,0 +1,326 @@
+<html lang="en"><head></head><body id="page-top" onload="showloader(false)">done all
+
+
+
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <!-- Custom fonts for this template-->
+    <link href="http://epvc.in/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="http://epvc.in/css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+     .se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('img/loader.gif') center no-repeat #fff;
+     }
+  .table td{
+    font-weight:bold;
+  } 
+   .front tr td {
+        font-size: 12px;
+    margin-left: 25px;
+    /*position: absolute;*/
+    }
+    body{
+            color: #333;
+    font-weight: 600;
+    }
+    </style>
+
+
+
+<div class="se-pre-con" style="display: none;"></div>
+
+  <div class="row card my-5">
+    <div class="row m-auto p-2">
+       
+        <form action="" name="genform" id="genform" method="POST" enctype="multipart/form-data">
+              <label>Select Certificate(PDF)</label> 
+              <input class="input my-2" type="file" name="pdf">
+            <label class="text-info">Select  Background Image</label>
+        <input class="input my-2" type="file" name="fileToUpload">
+      
+        <button id="generate" name="submit" class="btn btn-info">Generate</button>
+        </form>
+    </div>
+    <div class="row" style="text-align: center;">
+        <div class="col-sm-3" onclick="setbg('card/a.jpg')">
+            <img src="card/a.jpg" width="100" height="100">
+        </div>
+        <div class="col-sm-3" onclick="setbg('card/bg.jpg')">
+            <img src="card/bg.jpg" width="100" height="100">
+        </div>
+        <div class="col-sm-3" onclick="setbg('card/a.jpg')">
+            <img src="card/a.jpg" width="100" height="100">
+        </div>
+        <div class="col-sm-3" onclick="setbg('card/a.jpg')">
+            <img src="card/a.jpg" width="100" height="100">
+        </div>
+      </div>
+
+    </div> 
+    
+    <div class="row card">
+    <div class="row mx-2 p-2">
+    <div class="col-sm-6">
+    <button id="front" class="btn btn-outline-primary btn-md btn-block"><i class="fas fa-download"></i>Front Download</button>   
+    </div>
+    <div class="col-sm-6">
+     <button id="back" class="btn btn-outline-primary btn-md btn-block" onclick="printDiv('backPrint')"><i class="fas fa-download"></i>Back Download</button>   
+   
+    </div>
+     <div class="col-sm-12" style="margin-top:2%">
+     <button id="back" class="btn btn-outline-primary btn-md btn-block" onclick="printDiv('Print')"><i class="fas fa-download"></i>PDF Download</button>   
+   
+    </div>
+     </div>   
+
+
+
+ <div class="container-fluid">
+<!-- Page Heading -->
+<!-- <h1 class="h3 mb-4 text-gray-800">Blank Page</h1> -->
+
+    
+  
+      
+    <div class="row" id="Print" style="padding-top: 10%;padding-bottom: 5%;">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4" id="frontside">
+    <div class="bgicardbox">
+      <div style="
+    font-size: 21px;
+">
+  <img src="card/logo1.png" style="height: 52px;
+    /*width: 100%;*/
+    padding-left: 0px;
+    margin-left: 0px;position: absolute;">
+  <span style="    position: absolute;
+    left: 15%;
+    top: 4%;"><strong>Ministry of Health &amp; Family Walfare</strong></span><br>
+  <span style="    position: absolute;
+    top: 11%;
+    left: 31%;">Goverment of India</span>
+</div>
+    <table style="border:0;font-weight:bold;font-size:14px;position: absolute;
+    top: 18%; ">
+      <tbody class="front">
+    <tr><td colspan="2" align="center">
+</td>
+ </tr>
+      <tr><td style="text-align: center;font-weight: 900;
+    font-size: 14px;" colspan="2"><img src="card/Injection.png" width="4%" style="width:3%;    margin-right: 1%;"><u><strong>Vaccination Card</strong></u><img src="card/Injection.png" style="-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);width: 3%;margin-left: 1%;"></td>
+    </tr>
+      <tr>
+        <td><strong style="color:#c91717;font-size:14px;"><u>Beneficiary Detaills</u></strong></td>
+        <td><strong>Certificate ID :</strong> </td>
+      </tr>
+      <tr> <td><strong>Beneficiary Name / लाभार्थी का नाम</strong></td>  <td></td>  </tr>
+      <tr>  <td><strong>Gender / लिंग</strong></td> <td></td> </tr>
+      <tr>  <td><strong>ID Verified / पहचान पत्र सत्यापित</strong></td> <td>Addar xxxxxxxxx</td> </tr>
+      <tr> <td><strong>Unique Health ID (UHID)</strong></td> <td></td> </tr>
+      <tr> <td><strong>Beneficiary Reference ID</strong></td> <td></td> </tr>
+      <tr> <td><strong>Vaccination Name / वैक्सीन का नाम</strong></td>  <td> </td>  </tr>
+      <tr> <td><strong>Date of 1st Dose / पहली खुराक की तारीख</strong></td> <td></td> </tr>
+    <tr> <td><strong>Date of 2st Dose / दूसरी खुराक की तारीख</strong></td> <td></td> </tr>
+    <tr> <td><strong>Precaution dose</strong></td> <td></td> </tr>
+    </tbody></table>
+  </div>
+        </div>
+        <div class="col-sm-4" id="backside">
+          <div class="bgicardbox">
+    <table style="border:0; width:100%">
+    <tbody class="frontside"><tr>
+        <td style="font-size: 10px;"><strong>Vaccinated by / टीका लगाने वाले का नाम</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td width="50%" style="font-size: 10px;"><strong>Vaccination at / टीकाकरण का स्थान</strong></td>
+        <td></td>
+      </tr>
+     
+     
+      
+    </tbody></table>
+    <div style="    position: absolute;
+    top: 31%;
+    left: 14%;
+    font-size: 15px;
+    font-weight: 700;"><p>" दवाई भी, कड़ाई भी |</p></div>
+     <div style="position: absolute;
+    top: 41%;
+    left: 30%;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: initial;"><p>Together,  India <br>Will defeat <br><strong>COVID-19 "</strong></p></div>
+    <div style=" position: absolute;
+    top: 65%;
+    left: 38%;
+    font-size: 12px;
+    font-weight: 600;"><p>- प्रधानमंत्री</p></div>
+    <div style="position: absolute;
+    top: 39%;
+    left: 8%;
+    font-size: 12px;
+    font-weight: 600;"><img src="card/pm.png" style="width: 45%;"></div>
+    <div class="qrcode" style="display: flex;
+    text-align: initial;
+    justify-content: space-between;
+    
+    padding: 4%;">
+        <span>
+            <!-- <img src="pm.png" style="margin-top: 16%;width: 150px;"> -->
+        </span>
+            <span><img src="/admin" style="width: 162px;"></span>
+    </div>
+  </div>
+        </div></div>
+    
+
+</div>
+<!-- /.container-fluid -->
+<style type="text/css">
+.bgicardbox {
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-top: 5px;
+    color: #333;
+    line-height: 17px;
+    font-size: 13px;
+    background: url() no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 280px;
+}
+</style>
+
+    </div>
+
+
+
+
+    
+
+ 
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="http://epvc.in/vendor/jquery/jquery.min.js"></script>
+    <script src="http://epvc.in/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="http://epvc.in/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="http://epvc.in/js/sb-admin-2.min.js"></script>
+    <script>
+         
+        function showloader(r){
+            (r)?$('.se-pre-con').css('display','block'):$('.se-pre-con').css('display','none');
+
+        }
+        </script>
+
+
+
+
+<script>
+$(document).ready(function () {
+
+$('input[name=pdf]').on('change',()=>{
+        $("#generate").prop("disabled", false);
+})
+
+$('#front').on('click',(ev)=>{
+    html2canvas(document.querySelector("#frontside"),{scale:5}).then(canvas => {
+     var link = document.createElement("a");
+                document.body.appendChild(link);
+                link.download = "front.png";
+                link.href = canvas.toDataURL("image/png");
+                link.target = '_blank';
+                link.click();
+                
+            });
+
+});
+$('#back').on('click',(ev)=>{
+    html2canvas(document.querySelector("#backside"),{scale:5}).then(canvas => {
+     var link = document.createElement("a");
+                document.body.appendChild(link);
+                link.download = "back.png";
+                link.href = canvas.toDataURL("image/png");
+                link.target = '_blank';
+                link.click();
+                
+            });
+
+});
+})
+
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script type="text/javascript">
+    function printDiv(divName) {
+     // var printContents = document.getElementById(divName).innerHTML;
+     // var originalContents = document.body.innerHTML;
+
+     // document.body.innerHTML = printContents;
+
+     // window.print();
+
+     // document.body.innerHTML = originalContents;
+     var HTML_Width = $("#"+divName).width();
+    var HTML_Height = $("#"+divName).height();
+    var top_left_margin = 0;
+    var PDF_Width = HTML_Width + (top_left_margin * 2);
+    var PDF_Height = (PDF_Width * 1.5) + (top_left_margin * 2);
+    var canvas_image_width = HTML_Width;
+    var canvas_image_height = HTML_Height;
+
+    var totalPDFPages = Math.ceil(HTML_Height / PDF_Height) - 1;
+
+  html2canvas(document.querySelector("#"+divName),{scale:5}).then(canvas => {
+                //$("#previewBeforeDownload").html(canvas);
+                var imgData = canvas.toDataURL("image/jpeg",1);
+                var pdf = new jsPDF("p", "mm", "a4");
+                var pageWidth = pdf.internal.pageSize.getWidth();
+                var pageHeight = pdf.internal.pageSize.getHeight();
+                var imageWidth = canvas.width;
+                var imageHeight = canvas.height;
+
+                var ratio = imageWidth/imageHeight >= pageWidth/pageHeight ? pageWidth/imageWidth : pageHeight/imageHeight;
+                //pdf = new jsPDF(this.state.orientation, undefined, format);
+                pdf.addImage(imgData, 'JPEG', 0, 0, imageWidth * ratio, imageHeight * ratio);
+                pdf.save("invoice.pdf");
+                //$("#previewBeforeDownload").hide();
+                $('#c-invoice').modal('hide');
+            });
+  // $('#Print').css('margin-top','0')
+}
+
+function setbg(url){
+  
+    $('.bgicardbox').css('background','url('+url+') no-repeat')
+    $('.bgicardbox').css('background-size','cover')
+    $('.bgicardbox').css('background-position','center')
+}
+</script>
+ <iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none;" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"></div></body></html>
