@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title></title>
+    <title> CoWIN PVC Print Portal </title>
 
     <!-- Custom fonts for this template-->
     <link href="http://epvc.in/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -113,10 +113,10 @@
     margin-left: 0px;position: absolute;">
   <span style="    position: absolute;
     left: 15%;
-    top: 4%;"><strong>Ministry of Health &amp; Family Walfare</strong></span><br>
+    top: 4%;"><strong>Ministry of Health &amp; Family Welfare</strong></span><br>
   <span style="    position: absolute;
     top: 11%;
-    left: 31%;">Goverment of India</span>
+    left: 31%;">Government of India</span>
 </div>
     <table style="border:0;font-weight:bold;font-size:14px;position: absolute;
     top: 18%; ">
@@ -129,15 +129,15 @@
   transform: scaleX(-1);width: 3%;margin-left: 1%;"></td>
     </tr>
       <tr>
-        <td><strong style="color:#c91717;font-size:14px;"><u>Beneficiary Detaills</u></strong></td>
+        <td><strong style="color:#c91717;font-size:14px;"><u>Beneficiary Details</u></strong></td>
         <td><strong>Certificate ID :</strong> </td>
       </tr>
       <tr> <td><strong>Beneficiary Name / लाभार्थी का नाम</strong></td>  <td></td>  </tr>
       <tr>  <td><strong>Gender / लिंग</strong></td> <td></td> </tr>
-      <tr>  <td><strong>ID Verified / पहचान पत्र सत्यापित</strong></td> <td>Addar xxxxxxxxx</td> </tr>
+      <tr>  <td><strong>ID Verified / पहचान पत्र सत्यापित</strong></td> <td>Aadhaar xxxxxxxxx</td> </tr>
       <tr> <td><strong>Unique Health ID (UHID)</strong></td> <td></td> </tr>
       <tr> <td><strong>Beneficiary Reference ID</strong></td> <td></td> </tr>
-      <tr> <td><strong>Vaccination Name / वैक्सीन का नाम</strong></td>  <td> </td>  </tr>
+      <tr> <td><strong>Vaccine Name / वैक्सीन का नाम</strong></td>  <td> </td>  </tr>
       <tr> <td><strong>Date of 1st Dose / पहली खुराक की तारीख</strong></td> <td></td> </tr>
     <tr> <td><strong>Date of 2st Dose / दूसरी खुराक की तारीख</strong></td> <td></td> </tr>
     <tr> <td><strong>Precaution dose</strong></td> <td></td> </tr>
